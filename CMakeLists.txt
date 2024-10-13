@@ -10,11 +10,17 @@ aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
+include_directories($ENV{INCLUDE})
+
+link_directories(${PROJECT_SOURCE_DIR})     
+
+#an alternative way is to link libs for all t argets
+#link_libraries(SDL3) 
+
 #add all files from SRC folder
 add_executable(${PROJECT_NAME} ${SRC}) 
+ 
+target_link_libraries( ${PROJECT_NAME} SDL3)
 
-#foreach(cppfile IN LISTS SRC)  
-#    get_filename_component(filename ${cppfile} NAME_WE)  
-#    add_executable(${filename} ${cppfile})  
-#endforeach()  
+
 
