@@ -12,7 +12,7 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 include_directories($ENV{INCLUDE})
 
-link_directories(${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/)     
+link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../thirdparty/)     
 
 #an alternative way is to link libs for all t argets
 #link_libraries(SDL3) 
@@ -22,7 +22,7 @@ add_executable(${PROJECT_NAME} ${SRC})
  
 target_link_libraries( ${PROJECT_NAME} SDL3)
 
-file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/SDL3.dll
+file(COPY ${PROJECT_SOURCE_DIR}/../thirdparty/SDL3.dll
     DESTINATION ${EXECUTABLE_OUTPUT_PATH}/)
 
 

@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bin/SDL3Experiment.exe",
+            "program": "${workspaceFolder}/SDL3DrawLineExample/bin/DrawLineSDL3.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
