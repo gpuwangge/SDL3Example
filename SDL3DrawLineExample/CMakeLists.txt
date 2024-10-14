@@ -14,7 +14,7 @@ include_directories($ENV{INCLUDE})
 
 link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../thirdparty/)     
 
-#an alternative way is to link libs for all t argets
+#an alternative way is to link libs for all targets
 #link_libraries(SDL3) 
 
 #add all files from SRC folder
