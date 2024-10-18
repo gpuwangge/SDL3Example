@@ -8,4 +8,8 @@ Go to the project dir
 > cmake -G "MinGW Makefiles" ..  
 > make  
   
+# Resource
+Some tests need image resource. Manually move the image into the bin/ folder.
+
+
 
