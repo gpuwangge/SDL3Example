@@ -7,6 +7,9 @@ Go to the project dir
 > cd build  
 > cmake -G "MinGW Makefiles" ..  
 > make  
+
+# Issue
+In some machines(Windows Laptop), SDL_Log() works but SDL_CreateWindow() will fail without any error message...  
   
 # Resource
 Some tests need image resource. Manually move the image into the bin/ folder.
